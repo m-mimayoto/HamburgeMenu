@@ -2,12 +2,13 @@
         <div class="wrapper">
         <main>
             <section class="p-top l-top">
-                <h2 class="p-top__title">ダミーサイト</h2>
+                <h2 class="p-top__title"><?php bloginfo('description'); ?></h2>
             </section>
 
             <section class="l-service-wrapprer">
                 <ul class="l-service">
                     <li class="l-service__takeout">
+                    
                         <h2 class="p-service__title--takeout">Take Out</h2>
                         <ul class="l-service__inner">
                             <li class="p-service__cat--top">
