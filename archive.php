@@ -1,5 +1,4 @@
-
-    <?php get_header(); ?>
+ <?php get_header(); ?>
 
         <div class="wrapper">
             <main>
@@ -7,50 +6,29 @@
                 <div class="l-top__title__layer"></div>
                 <div class="l-top--archive"></div>
                     <h2 class="p-top__title--menu">Menu:</h2>
-                    <p class="p-top__subtitle--archive">チーズバーガー</p>
-                </section>
+                    <p class="p-top__subtitle--archive"><?php echo esc_html(single_term_title('',false));?> <!--チーズバーガー--></p>
+                </section><!--p-top-->
 
                 <section class="p-menu">
                     <article class="p-menu__desc">
-                        <h2 class="p-menu__desc__title">小見出しが入ります</h2>
+                        <h2 class="p-menu__desc__title"><?php echo esc_html(single_term_title('',false));?><!--小見出しが入ります--></h2>
                         <p class="p-menu__desc__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                     </article>
 
-                    <section class="l-menu__list">
-                        <figure class="l-menu__list__item">
-                            <div class="l-menu__list__item__img"></div><!--商品の写真-->
-                            <figcaption class="l-menu__list__item__info"><!--商品写真の説明-->
-                                <h2 class="p-menu__list__item__title">チーズバーガー</h2>
-                                <h3 class="p-menu__list__item__subtitle">小見出しが入ります</h3>
-                                <p class="p-menu__list__item__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                                <div class="c-button__block"><a href="#" class="c-button--detail">詳しく見る</a></div>
-                            </figcaption>
-                        </figure>
-                        <figure class="l-menu__list__item">
-                            <div class="l-menu__list__item__img"></div><!--商品の写真-->
-                            <figcaption class="l-menu__list__item__info"><!--商品写真の説明-->
-                                <h2 class="p-menu__list__item__title">ダブルチーズバーガー</h2>
-                                <h3 class="p-menu__list__item__subtitle">小見出しが入ります</h3>
-                                <p class="p-menu__list__item__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                                <div class="c-button__block"><a href="#" class="c-button--detail">詳しく見る</a></div>
-                            </figcaption>
-                        </figure>
-                        <figure class="l-menu__list__item">
-                            <div class="l-menu__list__item__img"></div><!--商品の写真-->
-                            <figcaption class="l-menu__list__item__info"><!--商品写真の説明。-->
-                                <h2 class="p-menu__list__item__title">スペシャルチーズバーガー</h2>
-                                <h3 class="p-menu__list__item__subtitle">小見出しが入ります</h3>
-                                <p class="p-menu__list__item__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                                <div class="c-button__block"><a href="#" class="c-button--detail">詳しく見る</a></div>
-                            </figcaption>
-                        </figure>
-                    </section><!--l-menu__list-->
-
+                    <?php if(have_posts()) : ?>
+                        <?php while(have_posts()) : the_post(); ?>
+                        <?php get_template_part('sample'); ?>
+                            <?php 
+                            endwhile;
+                        else:?><p>表示できる記事がありません。</p>
+                     <?php endif; ?>
+                     
                     <section class="p-menu__page">
 
                     </section><!--p-menu__page-->
                 </section><!--p-menu-->
             </main>
+
             <section class="l-menu__pagenation">
                 <div class="l-pagenation">
                     <p class="p-pagenation__count">page 1/10</p>
@@ -79,5 +57,5 @@
             <?php get_sidebar(); ?>
         </div><!--wrapper-->
 
-        <?php get_footer(); ?> //footer.phpを読み込むテンプレートタグ（インクルードタグ）
+        <?php get_footer(); ?>
     
