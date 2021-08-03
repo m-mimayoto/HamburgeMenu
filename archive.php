@@ -12,7 +12,7 @@
                 <section class="p-menu">
                     <article class="p-menu__desc">
                         <h2 class="p-menu__desc__title"><?php echo esc_html(single_term_title('',false));?><!--小見出しが入ります--></h2>
-                        <p class="p-menu__desc__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                        <!--<p class="p-menu__desc__text">--><?php echo category_description(); ?><!--</p>-->
                     </article>
 
                     <?php if(have_posts()) : ?>
@@ -29,30 +29,7 @@
                 </section><!--p-menu-->
             </main>
 
-            <section class="l-menu__pagenation">
-                <div class="l-pagenation">
-                    <p class="p-pagenation__count">page 1/10</p>
-                    <a href="#" class="p-pagenation__pre">
-                        <i class="fas fa-angle-double-left fa-lg p-pagenation__pre--left"></i>
-                        <p class="p-pagenation__before">前へ</p>
-                    </a>
-                    <ul>
-                        <li><a href="#" class="p-pagenation--color">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#">6</a></li>
-                        <li><a href="#">7</a></li>
-                        <li><a href="#">8</a></li>
-                        <li><a href="#">9</a></li>
-                    </ul>
-                    <a href="#" class="p-pagenation__next">
-                        <p class="p-pagenation__after">次へ</p>
-                        <i class="fas fa-angle-double-right fa-lg p-pagenation__next--right"></i>
-                    </a>
-                </div>
-            </section>
+            <?php wp_pagenavi(); ?>
 
             <?php get_sidebar(); ?>
         </div><!--wrapper-->
