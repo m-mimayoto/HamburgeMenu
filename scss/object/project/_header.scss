@@ -27,7 +27,8 @@
     background-color: #fff;
     border-radius: 10px;
     height: 46px;
-    padding-left: 16px;   
+    padding-left: 35px;//虫眼鏡の配置の幅
+    position: relative;   
 }
 
 @media screen and(min-width:834px){
@@ -49,6 +50,17 @@
     }
 }
 
-.fas{
+.p-header__search>.fas{
     color: #808080;
+    position: absolute;
+    z-index: 10;
+    top: 143px;
+    margin-left: 10px;
+    width: 20px;
+}
+@media screen and(min-width:1920px){
+    .p-header__search>.fas{
+        top:15px;
+        margin-left: 10px;
+    }
 }

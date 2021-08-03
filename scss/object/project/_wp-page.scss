@@ -100,6 +100,28 @@
 }
 
 //archive
+.p-menu__desc>p{
+        @include text;
+        color:#3C2A10;
+        height: 276px;
+        width: 89.3%;
+        margin: 30px 18px 19px 22px;
+}
+@media screen and(min-width:834px){
+    .p-menu__desc>p{
+            height: 143px;
+            width: 90.76%;
+            margin: 25px 35px 37px 42px;
+    }
+}
+@media screen and(min-width:1920px){
+    .p-menu__desc>p{
+            height: 71px;
+            width: 70.46%;
+            margin: 25px 100px 70px 100px;
+        }
+}
+
 .l-menu__list__item{
         width: 90%;
         margin-left: auto;
@@ -117,11 +139,6 @@
         }
     }
 }
-
-.c-button__block{
-    padding-top: 40px;
-}
-
 @media screen and(min-width:834px){
     .l-menu__list__item{
         &__img{
@@ -131,16 +148,11 @@
             }
         }
 }
-
-
-
 @media screen and(min-width:1920px){
-    .post{
+    .l-menu__list__item{
         width:70%;
         margin-left: 100px;
-    }
 
-    .l-menu__list__item{
         &__img{
             img{
                 height: 471px;
@@ -148,6 +160,28 @@
             }
         }
     }
+
+.c-button__block{
+    padding-top: 40px;
+}
+
+.l-menu__list__item__info>p{
+    padding-top: 24px;
+    padding-bottom: 40px;
+}
+@media screen and(min-width:1920px){
+    .l-menu__list__item__info>p{
+        padding-top: 74px;
+        padding-bottom: 60px;
+    }
+}
+
+
+
+//single（固定ページ：商品説明）
+.l-top--single>img{
+    height: 500px;
+}
 
 //page(ショップ情報)
 .wp-block-group__inner-container{
@@ -690,4 +724,57 @@ blockquote{
         padding-left: 100px;
         margin-bottom: 352px;
     }   
+}
+
+//pagenavi
+.wp-pagenavi{
+    height: 35px;
+    display: flex;
+    width: 71%;
+    justify-content: center;
+    margin: 105px auto 30px auto;
+
+    .pages{
+        font-family: Roboto;
+        font-weight: bold;
+        color: #707070;
+        width: 75px;
+        line-height: 35px;
+    }
+    .page{
+        display: block;
+        color: #707070;
+        width: 35px;
+        border: solid 1px #707070;                    
+        height: 35px;
+        padding: 7px 9px 7px 10px;
+        font-family: Roboto;
+        font-weight: bold;
+        text-align: center;
+        background-color:#fff;
+        margin-right: 15px;
+    }
+    .current{
+        display: block;
+        width: 35px;
+        border: solid 1px #707070;                    
+        height: 35px;
+        padding: 7px 9px 7px 10px;
+        font-family: Roboto;
+        font-weight: bold;
+        text-align: center;
+        background-color: #3C2B1C;
+        color: #fff;
+        margin-right: 15px;
+    }
+    .nextpostslink{
+        width: 35px;
+        text-align: center;
+        line-height: 35px;
+    }
+    .previouspostslink{
+        width: 35px;
+        text-align: center;
+        line-height: 35px;
+    }
 }
