@@ -11,7 +11,7 @@
 
                 <section class="p-menu">
                     <article class="p-menu__desc">
-                        <h2 class="p-menu__desc__title"><?php echo esc_html( single_cat_title( '', false ) ); ?></h2>
+                        <h2 class="p-menu__desc__title"><?php echo esc_html( get_search_query( false ) ); ?></h2>
                         <p class="p-menu__desc__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                     
                     </article>
