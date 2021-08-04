@@ -2152,7 +2152,7 @@ body {
 #menu-side_nav #menu-item-68 .sub-menu {
   font-size: 20px;
   margin-top: 40px;
-  margin-left: 66px;
+  padding-left: 66px;
 }
 
 #menu-side_nav #menu-item-68 .sub-menu li {
@@ -2172,7 +2172,7 @@ body {
 #menu-side_nav #menu-item-75 .sub-menu {
   font-size: 20px;
   margin-top: 40px;
-  margin-left: 66px;
+  padding-left: 66px;
 }
 
 #menu-side_nav #menu-item-75 .sub-menu li {
@@ -2192,7 +2192,7 @@ body {
 #menu-side_nav #menu-item-76 .sub-menu {
   font-size: 20px;
   margin-top: 40px;
-  margin-left: 66px;
+  padding-left: 66px;
 }
 
 #menu-side_nav #menu-item-76 .sub-menu li {
@@ -2312,7 +2312,13 @@ body {
 }
 
 .l-top--single > img {
-  height: 500px;
+  height: 225px;
+}
+
+@media screen and (min-width: 834px) {
+  .l-top--single > img {
+    height: 500px;
+  }
 }
 
 .wp-block-group__inner-container {

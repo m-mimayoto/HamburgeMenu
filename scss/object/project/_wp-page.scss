@@ -13,7 +13,7 @@
             .sub-menu{
                 font-size: 20px;
                 margin-top: 40px;
-                margin-left: 66px;
+                padding-left: 66px;
 
                 li{
                     margin-bottom: 20px;
@@ -32,7 +32,7 @@
             .sub-menu{
                 font-size: 20px;
                 margin-top: 40px;
-                margin-left: 66px;
+                padding-left: 66px;
 
                 li{
                     margin-bottom: 20px;
@@ -50,7 +50,7 @@
             .sub-menu{
                 font-size: 20px;
                 margin-top: 40px;
-                margin-left: 66px;
+                padding-left: 66px;
 
                 li{
                     margin-bottom: 20px;
@@ -180,7 +180,12 @@
 
 //single（固定ページ：商品説明）
 .l-top--single>img{
-    height: 500px;
+    height: 225px;
+}
+@media screen and(min-width:834px){
+    .l-top--single>img{
+        height: 500px;
+    }
 }
 
 //page(ショップ情報)
