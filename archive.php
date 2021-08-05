@@ -20,7 +20,7 @@
                         <?php get_template_part('sample'); ?>
                             <?php 
                             endwhile;
-                        else:?><p>表示できる記事がありません。</p>
+                        else:?><p　class="errormessage">表示できる記事がありません。</p>
                      <?php endif; ?>
                      
                     <section class="p-menu__page">
