@@ -32,6 +32,9 @@
 }
 
 @media screen and(min-width:1920px){
+    .p-menu{
+        height: 1310px;
+    }
     .p-menu__desc{
         &__title{
             padding-top: 60px;
@@ -44,7 +47,7 @@
             margin: 25px 100px 70px 100px;
         }
     }
-    }
+}
 
 .p-menu__list__item{
 

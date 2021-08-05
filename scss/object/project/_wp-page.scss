@@ -176,7 +176,20 @@
     }
 }
 
-
+.errormessage{
+    padding-left: 22px;
+    margin-bottom: 20px;
+}
+@media screen and(min-width:834px){
+    .errormessage{
+        padding-left: 42px;
+    }
+}
+@media screen and(min-width:1920px){
+    .errormessage{
+        padding-left: 100px;
+    }
+}
 
 //single（固定ページ：商品説明）
 .l-top--single>img{
@@ -781,5 +794,29 @@ blockquote{
         width: 35px;
         text-align: center;
         line-height: 35px;
+    }
+}
+
+//404(エラー)
+.main--error{
+    padding: 20px;
+    
+    h2{
+        margin-top: 20px;
+    }
+    p{
+        margin-top: 20px;
+    }
+}
+@media screen and(min-width:834px){
+    .main--error{
+        padding: 43px;
+    }
+}
+@media screen and(min-width:1920px){
+    .main--error{
+        width: 80%;
+        height: 1310px;
+        padding: 100px;
     }
 }
