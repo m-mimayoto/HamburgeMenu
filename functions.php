@@ -8,8 +8,11 @@
             'caption',
         ));
     add_theme_support('post-thumbnails');
-    add_theme_support( 'menus' );
+    //add_theme_support( 'menus' );
     add_theme_support( 'title-tag' );
+    add_theme_support( 'automatic-feed-links' );
+    add_theme_support( 'custom-header' );
+    add_theme_support( "custom-background");
     register_nav_menus( array(
             'side_nav' => esc_html__('side navigation','hamburger'),
             'footer_nav' => esc_html__('footer navigation','hamburger'),
@@ -21,6 +24,7 @@
         wp_enqueue_style( 'font-awesome', '//use.fontawesome.com/releases/v5.6.1/css/all.css', array(), 'v5.6.1' );
         wp_enqueue_style( 'hamburger', get_template_directory_uri() . '/css/hamburger.css', array(), '1.0.0' );
         wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css', array(), '1.0.0' );
+        wp_enqueue_script( 'jquery', get_template_directory_uri() . '/jquery/3.6.0/jquery.min.js', array(), '3.6.0', true );
         wp_enqueue_script( 'script', get_template_directory_uri() . '/move.js', array(), '1.0.0', true );
     }
     add_action( 'wp_enqueue_scripts', 'hamburger_script' );

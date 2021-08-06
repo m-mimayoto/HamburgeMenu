@@ -2,20 +2,16 @@
 <html lang="<?php language_attributes(); ?>">
     <haed>
         <meta charset="UTF-8">
-        
          <!--レイアウト表示-->
          <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
          <meta name="robots" content="index,follow" />
-         <!--スマホサイズ-->
-         <meta name="viewport" content="width=device-width; initial-scale=1;">
-         <!--ファイルの読み込み-->
-         <link rel="https://unpkg.com/ress/dist/ress.min.css">
-         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
          <!--viewpoint-->
          <meta name="viewport" content="width=device-width,initial-scale=1">
+         <link rel="https://unpkg.com/ress/dist/ress.min.css">
          <?php wp_head(); ?>
     </haed>
     <body <?php body_class(); ?>>
+    <?php wp_body_open(); ?> 
 
     <header class="l-header">
             <div class="p-header__title">

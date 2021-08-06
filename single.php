@@ -9,6 +9,9 @@
                     <h1 class="p-top__title--single"><?php the_title(); ?></h1>
                 </section>
                 <?php the_content(); ?>
+                <div class="page-links">
+                <?php wp_link_pages(); // 記事内ページャー ?>
+                </div>
             <?php endwhile; ?>
         <?php endif; ?>
             </main>
