@@ -39,3 +39,5 @@
             return $title;
         }
     add_filter( 'pre_get_document_title', 'hamburger_title' ); //
+
+    if ( ! isset( $content_width ) ) $content_width = 1920;
