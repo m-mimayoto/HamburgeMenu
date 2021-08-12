@@ -16,25 +16,26 @@
 }
 
 @media screen and(min-width:834px){
-.p-menu__desc{
-    &__title{
-        padding-top: 36px;
-        padding-left: 42px;
-        font-size: 36px;
-    }
+    .p-menu__desc{
+        &__title{
+            padding-top: 36px;
+            padding-left: 42px;
+            font-size: 36px;
+        }
 
-    &__text{
-        height: 143px;
-        width: 90.76%;
-        margin: 25px 35px 37px 42px;
+        &__text{
+            height: 143px;
+            width: 90.76%;
+            margin: 25px 35px 37px 42px;
+        }
     }
-}
 }
 
 @media screen and(min-width:1920px){
     .p-menu{
         height: 1310px;
     }
+
     .p-menu__desc{
         &__title{
             padding-top: 60px;
@@ -50,7 +51,6 @@
 }
 
 .p-menu__list__item{
-
     &__title{
         @include titleF;
         font-size: 20px;
@@ -67,33 +67,27 @@
         @include text;
         margin: 10px 0 40px 0;
         height: 114px;
-        //width: 89.88%;
     }
 }
 
 @media screen and(min-width:834px){
     .p-menu__list__item{
-
         &__title{
             padding-top: 29px;
-            
         }
     
         &__subtitle{
             padding-top:20px ;
-           
         }
     
         &__text{
             margin: 10px 0 45px 0;
-            //width: 68.1%;
         }
     }
 }
 
 @media screen and(min-width:1920px){
     .p-menu__list__item{
-
         &__title{
             padding-top: 53px;
             font-size: 36px;
@@ -106,7 +100,6 @@
     
         &__text{
             margin: 17px 0 60px 0;
-            //width: 75.29%;
         }
     }
 }

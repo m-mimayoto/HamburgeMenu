@@ -1,7 +1,8 @@
 .p-top__img{
     height: 285px;
     width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 @media screen and(min-width:1920px){

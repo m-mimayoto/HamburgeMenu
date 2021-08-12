@@ -1,0 +1,35 @@
+#menu-footer_nav{
+    display: flex;
+    justify-content: center;
+    padding-top: 39px;
+
+    a{
+        color: #fff;
+        font-size: 20px;
+        font-family: M+1m;
+
+    }
+}
+
+#menu-item-60{
+    text-align: end;
+
+    a{
+        position: relative;
+
+        &::after{
+            content:"";
+            display:inline-block;
+            width:2px;
+            height:25px;
+            background-color:#fff;
+            position:absolute;
+            margin-left: 10px;
+            margin-right:10px ;
+         }
+    }
+}
+
+#menu-item-168{
+  margin-left: 20px;
+}

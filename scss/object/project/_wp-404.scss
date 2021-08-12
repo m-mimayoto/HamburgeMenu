@@ -1,0 +1,22 @@
+.main--error{
+    padding: 20px;
+    
+    h2{
+        margin-top: 20px;
+    }
+    p{
+        margin-top: 20px;
+    }
+}
+@media screen and(min-width:834px){
+    .main--error{
+        padding: 43px;
+    }
+}
+@media screen and(min-width:1920px){
+    .main--error{
+        width: 80%;
+        height: 1310px;
+        padding: 100px;
+    }
+}

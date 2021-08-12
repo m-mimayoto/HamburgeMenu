@@ -1,5 +1,4 @@
  .p-product{
-     
      &__item--top{
          position: relative;
          height: 176px;
@@ -28,7 +27,6 @@
        overflow-wrap:  break-word;
        overflow: hidden;
     }
-    
  }
 
  @media screen and(min-width:834px){
@@ -74,5 +72,5 @@
      &__item__text--bottom{
         height: 191px;
      }
-  }
- }
+   }
+}

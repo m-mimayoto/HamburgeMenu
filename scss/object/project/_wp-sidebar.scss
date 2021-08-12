@@ -1,0 +1,61 @@
+#menu-side_nav{
+    margin-top: 85px;
+
+    #menu-item{
+        &-68{
+            &>a{
+                font-size: 24px;
+                font-weight: bold;
+                margin-left: 46px;
+            }
+
+            .sub-menu{
+                font-size: 20px;
+                margin-top: 40px;
+                padding-left: 66px;
+
+                li{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        &-75{
+            margin-top: 40px;
+
+            &>a{
+                font-size: 24px;
+                font-weight: bold;
+                margin-left: 46px;
+            }
+
+            .sub-menu{
+                font-size: 20px;
+                margin-top: 40px;
+                padding-left: 66px;
+
+                li{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        &-76{
+            margin-top: 40px;
+            &>a{
+                font-size: 24px;
+                font-weight: bold;
+                margin-left: 46px;
+            }
+
+            .sub-menu{
+                font-size: 20px;
+                margin-top: 40px;
+                padding-left: 66px;
+
+                li{
+                    margin-bottom: 20px;
+                }
+            }
+        }    
+    }
+}

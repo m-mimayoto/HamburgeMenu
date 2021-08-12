@@ -1,0 +1,51 @@
+.wp-pagenavi{
+    height: 35px;
+    display: flex;
+    width: 71%;
+    justify-content: center;
+    margin: 105px auto 30px auto;
+
+    .pages{
+        font-family: Roboto;
+        font-weight: bold;
+        color: #707070;
+        width: 75px;
+        line-height: 35px;
+    }
+    .page{
+        display: block;
+        color: #707070;
+        width: 35px;
+        border: solid 1px #707070;                    
+        height: 35px;
+        padding: 7px 9px 7px 10px;
+        font-family: Roboto;
+        font-weight: bold;
+        text-align: center;
+        background-color:#fff;
+        margin-right: 15px;
+    }
+    .current{
+        display: block;
+        width: 35px;
+        border: solid 1px #707070;                    
+        height: 35px;
+        padding: 7px 9px 7px 10px;
+        font-family: Roboto;
+        font-weight: bold;
+        text-align: center;
+        background-color: #3C2B1C;
+        color: #fff;
+        margin-right: 15px;
+    }
+    .nextpostslink{
+        width: 35px;
+        text-align: center;
+        line-height: 35px;
+    }
+    .previouspostslink{
+        width: 35px;
+        text-align: center;
+        line-height: 35px;
+    }
+}
