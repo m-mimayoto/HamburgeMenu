@@ -7,12 +7,18 @@
             'gallery',
             'caption',
         ));
-    add_theme_support('post-thumbnails');
+
+    add_theme_support('post-thumbnails');//アイキャッチ画像
     //add_theme_support( 'menus' );
-    add_theme_support( 'title-tag' );
-    add_theme_support( 'automatic-feed-links' );
-    add_theme_support( 'custom-header' );
-    add_theme_support( "custom-background");
+    add_theme_support( 'title-tag' );//タイトルタグ
+    add_theme_support( 'automatic-feed-links' );//フィードのリンク
+    add_theme_support( 'custom-header' );//ヘッダー画像の実装（themecheck）
+    add_theme_support( "custom-background");//背景色と背景のカスタマイズ
+    add_theme_support( "wp-block-styles" ) ;//(themecheck)
+    add_theme_support( "responsive-embeds" );//(themechek)
+    add_theme_support( "custom-logo");//(themecheck)
+    add_theme_support( "align-wide" );//(themecheck)
+
     register_nav_menus( array(
             'side_nav' => esc_html__('side navigation','hamburger'),
             'footer_nav' => esc_html__('footer navigation','hamburger'),
@@ -38,6 +44,32 @@
         }
             return $title;
         }
-    add_filter( 'pre_get_document_title', 'hamburger_title' ); //
+    add_filter( 'pre_get_document_title', 'hamburger_title' ); 
 
-    if ( ! isset( $content_width ) ) $content_width = 1920;
+    if ( ! isset( $content_width ) ) $content_width = 1920;//カテゴリーサイズ(themecheck)
+
+    function hamburger_theme_add_editor_styles() {
+        add_editor_style( 'custom-editor-style.css' );
+    }
+    add_action( 'admin_init', 'hamburger_theme_add_editor_styles' );
+    
+
+    function my_block_stlye(){
+        register_block_style(
+	        'core/image',
+            array(
+                'name'         => 'drop-shadow',
+                'label'        => __( 'Drop Shadow', 'hamburger' ),
+            )
+        );
+    }
+    function my_block_pattern(){
+        register_block_pattern(
+            'my_block_pattern',
+            array(
+                'title'       => '',
+                'description' => '',
+            )
+        );
+    }
+            
