@@ -14,15 +14,14 @@
     <?php wp_body_open(); ?> 
 
     <header class="l-header">
-            <div class="p-header__title">
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                <h1><?php bloginfo( 'name' ); ?></h1>
-                </a>
-            </div>
+        <div class="p-header__title">
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+            <h1><?php bloginfo( 'name' ); ?></h1>
+            </a>
+        </div>
 
-            <div class="c-button">
-                <button class="c-button__menu">Menu</button>
-            </div>
-            
-            <?php get_search_form(); ?>
-</header>
+        <div class="c-button">
+            <button class="c-button__menu">Menu</button>
+        </div>    
+        <?php get_search_form(); ?>
+    </header>
