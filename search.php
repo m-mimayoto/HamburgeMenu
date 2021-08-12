@@ -5,12 +5,12 @@
                 <div class="l-top__title__layer"></div>
                 <div class="l-top--archive"></div>
                 <h2 class="p-top__title--search">Search:</h2>
-                <p class="p-top__subtitle--archive_search"><?php echo esc_html( get_search_query( false ) ); ?></p>
+                <p class="p-top__subtitle--archive_search"><?php echo esc_html( get_search_query( '',false ) ); ?></p>
             </section>
 
             <section class="p-menu">
                 <article class="p-menu__desc">
-                    <h2 class="p-menu__desc__title"><?php echo esc_html( get_search_query( false ) ); ?></h2>
+                    <h2 class="p-menu__desc__title"><?php echo esc_html( get_search_query( '',false ) ); ?></h2>
                     <p class="p-menu__desc__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                 </article>
 
@@ -30,4 +30,3 @@
     <?php get_sidebar(); ?>
     </div><!--wrapper-->
 <?php get_footer(); ?> 
-    
