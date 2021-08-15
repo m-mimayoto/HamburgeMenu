@@ -13,7 +13,7 @@
                             $category_link = get_category_link( $category_id );
                         ?>
                         <a class="p-service__link--takeout" href="<?php echo esc_url( $category_link ); ?>">
-                        <h2 class="p-service__title--takeout"><?php echo get_cat_name(30);?></h2></a>
+                            <h2 class="p-service__title--takeout"><?php echo get_cat_name(30);?></h2>
                             
                             <ul class="l-service__inner">
                                 <li class="p-service__cat--top">
@@ -25,6 +25,7 @@
                                     <p class="p-service__cat__item">当店のテイクアウトで利用できる商品を掲載しています。</p>
                                 </li>
                             </ul>
+                        </a>    
                     </li>
 
                     <li class="l-service__eatin">
@@ -33,7 +34,7 @@
                             $category_link = get_category_link( $category_id );
                         ?>
                         <a class="p-service__link--eatin" href="<?php echo esc_url( $category_link ); ?>">
-                        <h2 class="p-service__title--eatin"><?php echo get_cat_name(31);?></h2></a>
+                            <h2 class="p-service__title--eatin"><?php echo get_cat_name(31);?></h2>
                             
                             <ul class="p-service__inner">
                                 <li class="p-service__cat--top">
@@ -45,6 +46,7 @@
                                     <p class="p-service__cat__item">当店のイートインで利用できる商品を掲載しています。</p>
                                 </li><!--p-service__cat--bottom-->
                             </ul><!--p-service__inner-->
+                        </a>    
                     </li><!--p-service__eatin-->
                 </ul><!--p-service-->
             </section><!--p-service-wrapprer-->
